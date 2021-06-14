@@ -19,7 +19,7 @@ middleware=[
     parser.urlencoded({extended:true})
 ]
 app.get('/',function(req,res){
-    res.render('C:\\Users\\HP\\wishlist\\views\\index')
+    res.render('\index')
 })
 const item=[];
 var i=0;
@@ -33,13 +33,13 @@ app.post('/home',middleware,function(req,res){
     }).catch(e=>{
         console.log(error)
     })
-    res.render('C:\\Users\\HP\\wishlist\\views\\home',{
+    res.render('\home',{
        item
     })
 })
 app.get('/home/:id',function(req,res){
     item.splice(req.params.id,1)
-    res.render('C:\\Users\\HP\\wishlist\\views\\home',{
+    res.render('\home',{
         item
      })
 })
