@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+      <style>
+          #text1{
+              font-family: cursive;
+              font-size: 24px;
+          }
+      </style>  
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <h3 class="float-left text-success">Clavy WishList</h3>
+          </div>
+            <form class="d-flex">
+              <a href="/" class="text-decoration-none text-success" id="text1">Home</a>
+            </form>
+        </div>
+      </nav>
+    <div>
+        <div class="m-4" >
+        <% item.map(thing=>{%>
+            <div class="m-3 border border-2">
+            <h4 class="text-success m-2"><%= thing %></h4>
+            <a href="/home/<%=item.indexOf(thing)%>" class="text-danger text-decoration-none m-2">Delete</a>
+            </div>
+          <% }) %>
+        </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            overflow: hidden;
+        }
+        .nav{
+          width: 100%;
+          background-color:	#FFFF00;
+          padding: 12px 14px;
+        }
+        .nav h1{
+            text-align: center;
+            color:turquoise;
+        }
+        .container{
+          height: 100vh;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction:column;
+        }
+        .container button{
+            margin: 10px;
+            outline: none;
+            width:200px;
+            border: none;
+            color:rgb(15, 122, 112);
+            background-color:#FFFF00;
+            font-size:16px;
+            text-align: center;
+            height:40px;
+            border-radius: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <h1>Clavy WishList App</h1>
+    </nav>
+    <form class="container" method="POST" action="home">
+        <textarea rows="15" cols="40" name="num1">
+        </textarea>
+        <button type="submit">Add the wishList</button>
+    </form>
+
+</body>
+</html>
